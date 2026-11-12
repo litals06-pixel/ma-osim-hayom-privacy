@@ -21,9 +21,9 @@ header{margin-bottom:22px}
 h1{font-size:clamp(25px,6vw,32px);line-height:1.25;margin:0 0 7px;font-weight:850}
 header p{font-size:15px;color:#566676;margin:0}
 .phone{background:white;border:7px solid #242b32;border-radius:34px;box-shadow:0 14px 40px #13293c26;
- padding:24px 13px 18px;min-height:378px;position:relative;overflow:hidden}
+ padding:24px 13px 18px;min-height:570px;position:relative;overflow:hidden}
 .phone:before{content:"";position:absolute;top:3px;left:50%;width:75px;height:10px;border-radius:20px;background:#242b32;transform:translateX(-50%);z-index:2}
-.preview{filter:blur(11px);pointer-events:none;user-select:none;opacity:.86}
+.preview{filter:blur(8px);pointer-events:none;user-select:none;opacity:.85}
 .ribbon{background:linear-gradient(110deg,#fff1a7,#ffdb56);font-weight:900;border-radius:30px;padding:12px 4px;margin:4px 19px 16px;font-size:19px}
 .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
 .card{border-radius:19px;min-height:210px;padding:10px 5px;display:flex;flex-direction:column;gap:9px}
@@ -35,15 +35,16 @@ header p{font-size:15px;color:#566676;margin:0}
 .caption{border-radius:10px;background:#fff;min-height:32px}
 .scribble{margin-top:10px;font-size:12px;font-weight:bold}
 .big-button{background:#ffde63;border:2px solid #fac347;border-radius:30px;padding:13px;margin:18px 25px 0;font-weight:900}
-.lock-layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
- background:linear-gradient(180deg,#fff9ed3d,#fff8f5a1);z-index:3;padding:20px}
-.lock-card{background:#fffffff2;border:1px solid #f0dfbd;border-radius:22px;
- box-shadow:0 10px 28px #33270e2e;padding:19px 16px;width:100%;max-width:325px}
-.lock-icon{font-size:40px;margin:0 0 4px}
-.lock-card h2{font-size:23px;margin:0 0 8px}
-.lock-card p{font-size:15px;line-height:1.55;margin:0 0 15px}
+.lock-layer{position:absolute;inset:auto 0 0;display:flex;align-items:flex-end;justify-content:center;
+ background:none;z-index:3;padding:0 12px 16px}
+.lock-card{background:#fffffff5;border:1px solid #f0dfbd;border-radius:22px;
+ box-shadow:0 10px 28px #33270e2e;padding:14px 14px 16px;width:100%;max-width:325px}
+.lock-icon{font-size:30px;margin:0 0 2px}
+.lock-card h2{font-size:21px;margin:0 0 6px}
+.lock-card p{font-size:14px;line-height:1.5;margin:0 0 4px}
+.download-arrow{display:block;margin:0 auto 3px;color:#d49918;font-size:29px;font-weight:900;line-height:1.1}
 .cta{display:block;width:100%;background:#f8e075;border:1px solid #dfb42d;border-radius:16px;
- padding:14px 10px;color:#142438;font-size:17px;font-weight:800;text-decoration:none;cursor:pointer}
+ padding:12px 10px;color:#142438;font-size:17px;font-weight:800;text-decoration:none;cursor:pointer}
 .cta:focus-visible,.open:focus-visible{outline:3px solid #345f88;outline-offset:3px}
 .open{display:block;margin:13px auto 0;border:0;background:transparent;text-decoration:underline;
  color:#244f7a;font:700 15px/1.4 Arial,sans-serif;cursor:pointer}
@@ -73,7 +74,8 @@ footer{font-size:12px;color:#6e737a;margin:15px 0}
     <div class="lock-card">
       <div class="lock-icon" aria-hidden="true">🔒</div>
       <h2>מה יצא לכם?</h2>
-      <p>התוכנית ששלחו לך נעולה לתצוגה באפליקציה. פותחים אותה כדי לראות את כל שלוש הבחירות והתמונות.</p>
+      <p>התכנית ששלחו לך נעולה לתצוגה. כדי לראות את התכנית, הורד את האפליקציה.</p>
+      <span class="download-arrow" aria-hidden="true">⬇</span>
       <a id="download" class="cta" href="https://play.google.com/store/apps/details?id=com.maosimhayom.app" rel="nofollow noopener">📲 להורדת האפליקציה</a>
       <a id="open" class="open" href="#">כבר יש לך את האפליקציה? לפתיחת התוכנית</a>
       <p id="notice" class="notice" role="status"></p>
